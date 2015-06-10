@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>reheat.ac</path>
+
+   <animation>
+        <type>rotate</type>
+        <object-name>Rs01</object-name>
+        <object-name>Rs02</object-name>
+        <object-name>Rs03</object-name>
+        <object-name>Rs04</object-name>
+        <property>surface-positions/right-aileron-pos-norm</property>
+        <factor>8</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Ls01</object-name>
+        <object-name>Ls02</object-name>
+        <object-name>Ls03</object-name>
+        <object-name>Ls04</object-name>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>8</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>Rs01</object-name>
+        <object-name>Rs02</object-name>
+        <object-name>Rs03</object-name>
+        <object-name>Rs04</object-name>
+        <property>surface-positions/elevator-pos-norm</property>
+       <factor>8</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Ls01</object-name>
+        <object-name>Ls02</object-name>
+        <object-name>Ls03</object-name>
+        <object-name>Ls04</object-name>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>8</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Rs01</object-name>
+        <object-name>Rs02</object-name>
+        <object-name>Rs03</object-name>
+        <object-name>Rs04</object-name>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>-8.0</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Ls01</object-name>
+        <object-name>Ls02</object-name>
+        <object-name>Ls03</object-name>
+        <object-name>Ls04</object-name>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>-8.0</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+</PropertyList>

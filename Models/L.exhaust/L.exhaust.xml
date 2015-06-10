@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>L.exhaust.ac</path>
+
+<!-- _________Throttle dilation animations______________________ -->
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.360</object-name>
+        <property>engines/engine/prop-thrust</property>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <factor>-7</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.663</y-m>
+            <z-m>1.001</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.340</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.555</y-m>
+            <z-m>0.982</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.503</y1-m>
+ 	<z1-m> 0.964</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.607</y2-m>
+ 	<z2-m> 1.001</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.320</object-name>
+        <property>engines/engine/prop-thrust</property>
+<interpolation>
+     <entry><ind>0</ind><dep>7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>7</dep></entry>
+</interpolation>
+        <factor>7</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.555</y-m>
+            <z-m>0.982</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.418</y1-m>
+ 	<z1-m> 0.894</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.503</y2-m>
+ 	<z2-m> 0.964</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.300</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.555</y-m>
+            <z-m>0.982</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.418</y1-m>
+ 	<z1-m> 0.894</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.362</y2-m>
+ 	<z2-m> 0.800</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.280</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.352</y-m>
+            <z-m>0.746</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.362</y1-m>
+ 	<z1-m> 0.800</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.342</y2-m>
+ 	<z2-m> 0.693</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.260</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.352</y-m>
+            <z-m>0.746</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.342</y1-m>
+ 	<z1-m> 0.693</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.360</y2-m>
+ 	<z2-m> 0.586</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.240</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.388</y-m>
+            <z-m>0.539</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.360</y1-m>
+ 	<z1-m> 0.586</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.415</y2-m>
+ 	<z2-m> 0.492</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.220</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.457</y-m>
+            <z-m>0.457</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.415</y1-m>
+ 	<z1-m> 0.492</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.499</y2-m>
+ 	<z2-m> 0.422</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.200</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.551</y-m>
+            <z-m>0.403</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.499</y1-m>
+ 	<z1-m> 0.422</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.603</y2-m>
+ 	<z2-m> 0.385</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.180</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.658</y-m>
+            <z-m>0.385</z-m>
+        </center>
+	<axis>   
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.160</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.766</y-m>
+            <z-m>0.403</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.714</y1-m>
+ 	<z1-m> 0.385</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.818</y2-m>
+ 	<z2-m> 0.422</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.140</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.861</y-m>
+            <z-m>0.457</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.818</y1-m>
+ 	<z1-m> 0.422</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.903</y2-m>
+ 	<z2-m> 0.492</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.120</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.931</y-m>
+            <z-m>0.539</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.903</y1-m>
+ 	<z1-m> 0.492</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.959</y2-m>
+ 	<z2-m> 0.586</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.100</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.969</y-m>
+            <z-m>0.639</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.959</y1-m>
+ 	<z1-m> 0.586</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.979</y2-m>
+ 	<z2-m> 0.693</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.80</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.970</y-m>
+            <z-m>0.746</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.979</y1-m>
+ 	<z1-m> 0.693</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.961</y2-m>
+ 	<z2-m> 0.800</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.60</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.933</y-m>
+            <z-m>0.847</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.961</y1-m>
+ 	<z1-m> 0.800</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.906</y2-m>
+ 	<z2-m> 0.894</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.40</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.864</y-m>
+            <z-m>0.929</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.906</y1-m>
+ 	<z1-m> 0.894</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.822</y2-m>
+ 	<z2-m> 0.964</z2-m>
+	</axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.20</object-name>
+        <property>engines/engine/prop-thrust</property>
+        <factor>-7</factor>
+<interpolation>
+     <entry><ind>0</ind><dep>-7</dep></entry>
+     <entry><ind>10465</ind><dep>0</dep></entry>
+     <entry><ind>11500</ind><dep>-7</dep></entry>
+</interpolation>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.770</y-m>
+            <z-m>0.982</z-m>
+        </center>
+	<axis>   
+	<x1-m> 14.853</x1-m>
+ 	<y1-m> -0.822</y1-m>
+ 	<z1-m> 0.964</z1-m>
+ 	<x2-m> 14.853</x2-m>
+ 	<y2-m> -0.718</y2-m>
+ 	<z2-m> 1.001</z2-m>
+	</axis>
+    </animation>
+
+</PropertyList>

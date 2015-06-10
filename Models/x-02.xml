@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>x-02.ac</path>
+
+<model>
+  <name>L.exhaust</name>
+  <path>Aircraft/X-02/Models/L.exhaust/L.exhaust.xml</path>
+</model>
+
+<model>
+  <name>R.exhaust</name>
+  <path>Aircraft/X-02/Models/R.exhaust/R.exhaust.xml</path>
+</model>
+
+<model>
+  <name>reheat</name>
+  <path>Aircraft/X-02/Models/Reheat/Reheat.xml</path>
+</model>
+
+<model>
+  <name>L.exhaust</name>
+  <path>Aircraft/X-02/Models/L.exhaust/L.exhaust.xml</path>
+ <offsets>
+  <roll-deg>90</roll-deg>
+  <z-m>1.350</z-m>
+  <y-m>0.045</y-m>
+ </offsets>
+</model>
+
+<model>
+  <name>R.exhaust</name>
+  <path>Aircraft/X-02/Models/R.exhaust/R.exhaust.xml</path>
+ <offsets>
+  <roll-deg>-90</roll-deg>
+  <z-m>1.350</z-m>
+  <y-m>-0.045</y-m>
+ </offsets>
+</model>
+
+  <offsets>
+    <pitch-deg>0</pitch-deg>   
+    <heading-deg>0</heading-deg>
+    <roll-deg>0</roll-deg>
+    <x-m>-6</x-m>
+    <y-m>0</y-m>
+    <z-m>-0.4</z-m>
+  </offsets>
+
+    <animation>
+        <type>select</type>
+	  <object-name>reheat</object-name>
+        <property>engines/engine/prop-thrust</property>
+  	<condition>
+   <greater-than>
+    <property>engines/engine/prop-thrust</property>
+    <value>12000</value>
+   </greater-than>
+  	</condition>
+    </animation>
+
+<animation>
+  <type>material</type>
+  <object-name>exhaustflame</object-name>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+    <factor-prop>controls/engines/engine[0]/throttle</factor-prop>
+  </emission>
+</animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>R.canard</object-name>
+        <property>surface-positions/right-aileron-pos-norm</property>
+        <factor>19.0</factor>
+        <center>
+            <x-m>6.367</x-m>
+            <y-m>0</y-m>
+            <z-m>0.581</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.canard</object-name>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>19.0</factor>
+        <center>
+            <x-m>6.367</x-m>
+            <y-m>0</y-m>
+            <z-m>0.851</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>R.canard</object-name>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>-25.0</factor>
+        <center>
+            <x-m>6.367</x-m>
+            <y-m>0</y-m>
+            <z-m>0.581</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.canard</object-name>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>-25.0</factor>
+        <center>
+            <x-m>6.367</x-m>
+            <y-m>0</y-m>
+            <z-m>0.851</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>R.stabilitor</object-name>
+        <property>surface-positions/right-elevon-pos-norm</property>
+        <factor>30.0</factor>
+        <center>
+            <x-m>13.222</x-m>
+            <y-m>1.504</y-m>
+            <z-m>0.627</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.stabilitor</object-name>
+        <property>surface-positions/left-elevon-pos-norm</property>
+        <factor>30.0</factor>
+        <center>
+            <x-m>13.222</x-m>
+            <y-m>-1.504</y-m>
+            <z-m>0.627</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>R.wing</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>82</factor>
+  <interpolation>
+     <entry><ind>400</ind><dep>0</dep></entry>
+     <entry><ind>410</ind><dep>82</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>12.493</x-m>
+            <y-m>2.905</y-m>
+            <z-m>0.467</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.wing</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>-82</factor>
+  <interpolation>
+     <entry><ind>400</ind><dep>0</dep></entry>
+     <entry><ind>410</ind><dep>-82</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>12.493</x-m>
+            <y-m>-2.905</y-m>
+            <z-m>0.467</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>R.stabilitor</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>-46.0</factor>
+<interpolation>
+     <entry><ind>400</ind><dep>0</dep></entry>
+     <entry><ind>410</ind><dep>-46</dep></entry>
+</interpolation>
+        <center>
+            <x-m>13.222</x-m>
+            <y-m>1.504</y-m>
+            <z-m>0.627</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.stabilitor</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>46.0</factor>
+<interpolation>
+     <entry><ind>400</ind><dep>0</dep></entry>
+     <entry><ind>410</ind><dep>46</dep></entry>
+</interpolation>
+        <center>
+            <x-m>13.222</x-m>
+            <y-m>-1.504</y-m>
+            <z-m>0.627</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>R.aileron</object-name>
+        <property>surface-positions/right-aileron-pos-norm</property>
+        <factor>30.0</factor>
+        <center>
+            <x-m>12.052</x-m>
+            <y-m>2.413</y-m>
+            <z-m>0.474</z-m>
+        </center>
+        <axis>
+            <x>0.467</x>
+            <y>0.533</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.aileron</object-name>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>-30.0</factor>
+        <center>
+            <x-m>12.052</x-m>
+            <y-m>-2.413</y-m>
+            <z-m>0.474</z-m>
+        </center>
+        <axis>
+            <x>0.467</x>
+            <y>-0.533</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>S.R.bay</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>62.0</factor>
+<interpolation>
+     <entry><ind>400</ind><dep>0</dep></entry>
+     <entry><ind>401</ind><dep>62</dep></entry>
+     <entry><ind>409</ind><dep>62</dep></entry>
+     <entry><ind>410</ind><dep>0</dep></entry>
+</interpolation>
+        <center>
+            <x-m>9.005</x-m>
+            <y-m>2.255</y-m>
+            <z-m>0.539</z-m>
+        </center>
+	<axis>   
+	<x1-m> 7.698</x1-m>
+ 	<y1-m> 1.173</y1-m>
+ 	<z1-m> 0.571</z1-m>
+ 	<x2-m> 10.32</x2-m>
+ 	<y2-m> 3.337</y2-m>
+ 	<z2-m> 0.506</z2-m>
+	</axis>
+    </animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>S.L.bay</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>-62.0</factor>
+<interpolation>
+     <entry><ind>400</ind><dep>0</dep></entry>
+     <entry><ind>401</ind><dep>-62</dep></entry>
+     <entry><ind>409</ind><dep>-62</dep></entry>
+     <entry><ind>410</ind><dep>0</dep></entry>
+</interpolation>
+        <center>
+            <x-m>9.005</x-m>
+            <y-m>-2.255</y-m>
+            <z-m>0.539</z-m>
+        </center>
+	<axis>   
+	<x1-m> 7.698</x1-m>
+ 	<y1-m> -1.173</y1-m>
+ 	<z1-m> 0.571</z1-m>
+ 	<x2-m> 10.32</x2-m>
+ 	<y2-m> -3.337</y2-m>
+ 	<z2-m> 0.506</z2-m>
+	</axis>
+    </animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>I.L.bay</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>62.0</factor>
+<interpolation>
+     <entry><ind>400</ind><dep>0</dep></entry>
+     <entry><ind>401</ind><dep>62</dep></entry>
+     <entry><ind>409</ind><dep>62</dep></entry>
+     <entry><ind>410</ind><dep>0</dep></entry>
+</interpolation>
+        <center>
+            <x-m>8.988</x-m>
+            <y-m>-2.250</y-m>
+            <z-m>0.414</z-m>
+        </center>
+	<axis>   
+	<x1-m> 7.676</x1-m>
+ 	<y1-m> -1.162</y1-m>
+ 	<z1-m> 0.414</z1-m>
+ 	<x2-m> 10.32</x2-m>
+ 	<y2-m> -3.337</y2-m>
+ 	<z2-m> 0.414</z2-m>
+	</axis>
+    </animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>I.R.bay</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>-62.0</factor>
+<interpolation>
+     <entry><ind>400</ind><dep>0</dep></entry>
+     <entry><ind>401</ind><dep>-62</dep></entry>
+     <entry><ind>409</ind><dep>-62</dep></entry>
+     <entry><ind>410</ind><dep>0</dep></entry>
+</interpolation>
+        <center>
+            <x-m>8.988</x-m>
+            <y-m>2.250</y-m>
+            <z-m>0.414</z-m>
+        </center>
+	<axis>   
+	<x1-m> 7.676</x1-m>
+ 	<y1-m> 1.162</y1-m>
+ 	<z1-m> 0.414</z1-m>
+ 	<x2-m> 10.32</x2-m>
+ 	<y2-m> 3.337</y2-m>
+ 	<z2-m> 0.414</z2-m>
+	</axis>
+    </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>tailhook</object-name>
+  <property>gear/tailhook/position-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.25</ind><dep>0</dep></entry>
+   <entry><ind>1</ind><dep>85</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>14.269</x-m>
+   <y-m>-0.001</y-m>
+   <z-m>0.156</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>T.R.door</object-name>
+  <property>gear/tailhook/position-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>95</dep></entry>
+   <entry><ind>1</ind><dep>95</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>15.054</x-m>
+   <y-m>0.188</y-m>
+   <z-m>0.290</z-m>
+  </center>
+	<axis>   
+	<x1-m> 14.27</x1-m>
+ 	<y1-m> 0.229</y1-m>
+ 	<z1-m> 0.146</z1-m>
+ 	<x2-m> 15.838</x2-m>
+ 	<y2-m> 0.146</y2-m>
+ 	<z2-m> 0.435</z2-m>
+	</axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>T.L.door</object-name>
+  <property>gear/tailhook/position-norm</property>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>-95</dep></entry>
+   <entry><ind>1</ind><dep>-95</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>15.054</x-m>
+   <y-m>-0.188</y-m>
+   <z-m>0.290</z-m>
+  </center>
+	<axis>   
+	<x1-m> 14.27</x1-m>
+ 	<y1-m> -0.229</y1-m>
+ 	<z1-m> 0.146</z1-m>
+ 	<x2-m> 15.838</x2-m>
+ 	<y2-m> -0.146</y2-m>
+ 	<z2-m> 0.435</z2-m>
+	</axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L.wheel</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>63</factor>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>-1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L.strut</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>63</factor>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>-1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L.wheel</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-15.4</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>-15.4</dep></entry>
+   <entry><ind>1</ind><dep>-15.4</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>-1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L.strut</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-15.4</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>-15.4</dep></entry>
+   <entry><ind>1</ind><dep>-15.4</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>-1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>L.wheel</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-0.126</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>-0.126</dep></entry>
+   <entry><ind>1</ind><dep>-0.126</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>-1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>L.strut</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-0.126</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>-0.126</dep></entry>
+   <entry><ind>1</ind><dep>-0.126</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>-1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L.door</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-15.4</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>-85</dep></entry>
+   <entry><ind>1</ind><dep>-85</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>10.023</x-m>
+            <y-m>-1.334</y-m>
+            <z-m>0.393</z-m>
+        </center>
+	<axis>   
+	<x1-m> 9.437</x1-m>
+ 	<y1-m>-1.291</y1-m>
+ 	<z1-m> 0.414</z1-m>
+ 	<x2-m> 10.573</x2-m>
+ 	<y2-m>-1.378</y2-m>
+ 	<z2-m> 0.372</z2-m>
+	</axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R.wheel</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>63</factor>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R.strut</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>63</factor>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R.wheel</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>15.4</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>15.4</dep></entry>
+   <entry><ind>1</ind><dep>15.4</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R.strut</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>15.4</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>15.4</dep></entry>
+   <entry><ind>1</ind><dep>15.4</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>R.wheel</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-0.126</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>0.126</dep></entry>
+   <entry><ind>1</ind><dep>0.126</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>R.strut</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-0.126</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>0.126</dep></entry>
+   <entry><ind>1</ind><dep>0.126</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>9.181</x-m>
+            <y-m>1.119</y-m>
+            <z-m>0.004</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R.door</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-15.4</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.1</ind><dep>85</dep></entry>
+   <entry><ind>1</ind><dep>85</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>10.023</x-m>
+            <y-m>1.334</y-m>
+            <z-m>0.393</z-m>
+        </center>
+	<axis>   
+	<x1-m> 9.437</x1-m>
+ 	<y1-m> 1.291</y1-m>
+ 	<z1-m> 0.414</z1-m>
+ 	<x2-m> 10.573</x2-m>
+ 	<y2-m> 1.378</y2-m>
+ 	<z2-m> 0.372</z2-m>
+	</axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>F.R.door</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-15.4</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.2</ind><dep>-95</dep></entry>
+   <entry><ind>1</ind><dep>-95</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>5.305</x-m>
+            <y-m>0.351</y-m>
+            <z-m>-0.119</z-m>
+        </center>
+	<axis>   
+	<x1-m> 5.926</x1-m>
+ 	<y1-m> 0.341</y1-m>
+ 	<z1-m>-0.082</z1-m>
+ 	<x2-m> 4.684</x2-m>
+ 	<y2-m> 0.361</y2-m>
+ 	<z2-m>-0.156</z2-m>
+	</axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>F.L.door</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-15.4</factor>
+  <interpolation>
+   <entry><ind>0</ind><dep>0</dep></entry>
+   <entry><ind>0.2</ind><dep>95</dep></entry>
+   <entry><ind>1</ind><dep>95</dep></entry>
+  </interpolation>
+        <center>
+            <x-m>5.305</x-m>
+            <y-m>-0.351</y-m>
+            <z-m>-0.119</z-m>
+        </center>
+	<axis>   
+	<x1-m> 5.926</x1-m>
+ 	<y1-m>-0.341</y1-m>
+ 	<z1-m>-0.082</z1-m>
+ 	<x2-m> 4.684</x2-m>
+ 	<y2-m>-0.361</y2-m>
+ 	<z2-m>-0.156</z2-m>
+	</axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>F.wheel</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-72</factor>
+        <center>
+            <x-m>5.926</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.082</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>F.strut</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-72</factor>
+        <center>
+            <x-m>5.926</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.082</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>launch.bar</object-name>
+    <property>gear/gear/position-norm</property>
+<factor>-72</factor>
+        <center>
+            <x-m>5.926</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.082</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+     <animation>
+        <type>rotate</type>
+        <object-name>R.exhaust</object-name>
+        <property>surface-positions/right-elevon-pos-norm</property>
+       <factor>15.0</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.exhaust</object-name>
+        <property>surface-positions/left-elevon-pos-norm</property>
+        <factor>15.0</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>R.exhaust</object-name>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>-8.0</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L.exhaust</object-name>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>-8.0</factor>
+        <center>
+            <x-m>14.853</x-m>
+            <y-m>-0.650</y-m>
+            <z-m>0.692</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+  <model>
+    <path>Aircraft/x-02/Models/effects/trailL.xml</path>
+    <offsets>
+      <x-m> 15.395 </x-m>
+      <y-m> -0.660 </y-m>
+      <z-m> 0.693 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/x-02/Models/effects/trailR.xml</path>
+    <offsets>
+      <x-m> 15.395 </x-m>
+      <y-m> 0.660 </y-m>
+      <z-m> 0.693 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
